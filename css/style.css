@@ -1,0 +1,131 @@
+/* open-sans-regular - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/open-sans-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html {
+    block-size: border-box;
+}
+*,
+*::before,
+*::after {
+    block-size: inherit;
+}
+body {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #f7f7f7f7;
+}
+input, button{
+    font-size:23px;
+    line-height: 27px;
+    color: #f7f7f7;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 19px;
+}
+.header__logo-link{
+    font-size: 32px;
+    line-height:27px;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo-img{
+    margin-right: 10px;
+}
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item {
+    margin-right: 61px;
+}
+.header__link {
+    font-size: 23px;
+    line-height: 60px;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+li .header__link-sign{
+    
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10%;
+    width:120px;
+    height:50px;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #CD6326;
+
+}
+.header__link-sign:hover{
+    background-color:#CD6326;
+}
+/*.header__link-sign:visited{
+    background-color:#8F5613;
+}*/
+.header__link:hover
+.header__link:focus,.header__link:active{
+    opacity: 0.75;
+}
+.survival{
+    background:url(../img/bg-survival.jpg) no-repeat center;
+    background-size: cover;
+    padding-top:199px;
+    padding-left:120px;
+    padding-bottom:120px;
+}
+h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #CD6326;
+    font-size: 48px;
+    line-height: 72px;
+}
+.survival p{
+    width:274px;
+    font-size: 18px;
+    line-height: 27px;
+}
+.donate{
+    width:160px;
+    height:60px;
+    border-radius: 10px;
+    background-color:#CD6326;
+    border:none;
+    
+}
+.
